@@ -1,0 +1,50 @@
+.graph-container {
+  margin: 0 auto;
+}
+
+.graph-wrapper {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.graph-row, .graph-col {
+  display: flex;
+}
+
+.graph-row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.node {
+  border: none;
+  margin: 0 10px;
+}
+
+app-node > .node {
+  border: none;
+}
+
+nav {
+  width: 100%;
+  padding: 10px;
+  background: #968c00;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+}
+
+.graph-header {
+  font-size: 32px;
+}
+
+.graph-legend {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .graph-legend-entry {
+    display: flex;
+    justify-content: space-between;
+  }
+}

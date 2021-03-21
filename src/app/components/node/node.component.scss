@@ -1,0 +1,23 @@
+$visited-node-color: rgba(0, 190, 218, 0.75);
+$visited-node-animation-color: rgba(164, 8, 255, 0.75);
+
+.visited {
+  animation-name: visited-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.1;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  background-color: $visited-node-color;
+}
+
+@keyframes visited-animation {
+  0% {
+    background-color: $visited-node-animation-color;
+    border-radius: 100%;
+  }
+
+  100% {
+   background-color: $visited-node-color;
+  }
+}

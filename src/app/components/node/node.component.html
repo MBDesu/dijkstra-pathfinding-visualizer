@@ -1,0 +1,9 @@
+<div class="node" #nodeElement [ngClass]="{
+  'visited': node.hasBeenVisited,
+  'wall': node.isWall,
+  'end-node': node.isEndNode,
+  'in-path': node.inPath,
+  'start-node': node.isStartNode
+}" (mousedown)="mouseDown($event)" (mouseup)="mouseUp($event)" (dragstart)="startDragging($event)"
+  (mouseover)="dragWall()" (drop)="mouseUp($event)" (dragenter)="cancelDrag($event)" (dragleave)="cancelDrag($event)"
+  (dragover)="cancelDrag($event)" [draggable]="isTerminalNode"></div>
