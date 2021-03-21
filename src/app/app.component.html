@@ -33,7 +33,7 @@
   <div class="graph-wrapper" (mousedown)="mouseEvent($event)" (mouseup)="mouseEvent($event)">
     <div class="graph-row" *ngFor="let row of [].constructor(numRows); let i = index">
       <div class="graph-col" *ngFor="let col of [].constructor(numCols); let j = index">
-        <app-node #nodeComponents [node]="nodes[i][j]" (dropped)="drop($event)"></app-node> <!--  (dropped)="dropped($event)" -->
+        <app-node #nodeComponents [node]="nodes[i][j]" (dropped)="drop($event)"></app-node>
       </div>
     </div>
   </div>

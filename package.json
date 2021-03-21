@@ -1,5 +1,5 @@
 {
-  "name": "algorithm-visualizer",
+  "name": "dijskstra-pathfinding-visualizer",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
